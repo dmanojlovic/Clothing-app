@@ -34,14 +34,28 @@ function createAccount() {
     }
     //bring in every data from the textbox and create a user
         // if there is time, try to see if the email is valid (just check if @ is present)
-    
+    let username = document.getElementById("getUsername");
+    let password = document.getElementById("getPassword");
     
     // send user to the profile page 
 }
 
 //when the login button is clicked
 function login() {
+    //check if both boxes are filled 
+    if (document.getElementById("getUsername") == "") {
+        //show error message and end function
+        return;
+    }
+    //check if password box is filled 
+    if (document.getElementById("getPassword") == "") {
+        //show error message and end function
+        return;
+    }
+    
     // check if username and password are in the database
+    for 
+
     // check if they belong to the same user
     // bring the user to the profile page if successful
         // if not, print an error message on the website 

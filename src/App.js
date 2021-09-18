@@ -8,10 +8,14 @@ function App() {
       <DropItem icon="0o0"/>
       <DropItem icon="0+0"/>
     </Dropdown>
-    
   )
 }
 function Dropdown(props){
+  return(
+    <nav className="dropbar">
+      <ul className="dropbar-nav">{props.children }</ul>
+    </nav>
+  )
 }
 function DropItem(props){
   <li className="drop-item">
