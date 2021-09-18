@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React from "react";
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     
   )
 }
-function Dropdown(props){ 
+function Dropdown(props){
 }
 function DropItem(props){
   <li className="drop-item">
