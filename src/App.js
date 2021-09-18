@@ -4,6 +4,8 @@ function App() {
   return (
     <Dropdown>
       <DropItem icon="0_0"/>
+      <DropItem icon="0o0"/>
+      <DropItem icon="0+0"/>
     </Dropdown>
     
   )
