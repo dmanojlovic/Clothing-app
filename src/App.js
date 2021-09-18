@@ -18,11 +18,13 @@ function Dropdown(props){
   )
 }
 function DropItem(props){
+  return(
   <li className="drop-item">
     <a href="#" className="icon-button">
       {props.icon}
     </a>
   </li>
+  )
 }
 
 export default App;

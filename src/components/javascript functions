@@ -53,8 +53,13 @@ function login() {
         return;
     }
     
+    let username = document.getElementById("getUsername");
+    let password = document.getElementById("getPassword");
+
     // check if username and password are in the database
-    for 
+    for (let i of users) {
+        if (usern)
+    }
 
     // check if they belong to the same user
     // bring the user to the profile page if successful
