@@ -1,11 +1,11 @@
 import React from "react";
 import './App.css';
-
+import profilepage from './Components/profilepage'
 function App() {
   return (
-    <div>
+    <div container>
       <h1>Hello World</h1>
-      <h2>Profile Page Here</h2>
+      <profilepage />
     </div>
   )
 }
