@@ -2,16 +2,20 @@ import React from "react";
 
 function App() {
   return (
-    <Dropdown></Dropdown>
+    <Dropdown>
+      <DropItem icon="0_0"/>
+    </Dropdown>
     
   )
 }
-function Dropdown(){
-  return(
-    <nav className="dropdown">
-      <ul className="dropdown-nav"></ul>
-    </nav>
-  );
+function Dropdown(props){ 
+}
+function DropItem(props){
+  <li className="drop-item">
+    <a href="#" className="icon-button">
+      {props.icon}
+    </a>
+  </li>
 }
 
 export default App;
