@@ -3,9 +3,8 @@ import './App.css';
 import profilepage from './Components/profilepage'
 function App() {
   return (
-    <div container>
-      <h1>Hello World</h1>
-      <profilepage />
+    <div className='container'>
+      <h1/>Title here
     </div>
   )
 }
