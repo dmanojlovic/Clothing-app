@@ -22,10 +22,16 @@ function createAccount() {
     //make sure all the textboxes are filled 
     
     //create an array of textboxes 
-    textboxes = document.getElementsByClassName("form");
+    const textboxes = document.getElementsByClassName("form");
 
     for (textbox of textboxes) {
+        if textbox.value == "" {
+            //add an error message claiming empty textbox 
+            break;
+        }
+        else {
 
+        }
     }
     //bring in every data from the textbox and create a user
         // if there is time, try to see if the email is valid (just check if @ is present)
