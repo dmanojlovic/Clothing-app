@@ -27,7 +27,9 @@ function createAccount() {
     for (textbox of textboxes) {
         if textbox.value == "" {
             //add an error message claiming empty textbox 
-            break;
+
+            
+            return; 
         }
         else {
             
