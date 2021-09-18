@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   return (
     <div>
-      <h1>Hello form me</h1>
+      <h1>Hello World</h1>
       <h2>Profile Page Here</h2>
     </div>
   )
