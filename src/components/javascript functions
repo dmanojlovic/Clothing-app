@@ -30,7 +30,7 @@ function createAccount() {
             break;
         }
         else {
-
+            
         }
     }
     //bring in every data from the textbox and create a user
