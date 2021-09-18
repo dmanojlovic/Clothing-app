@@ -26,17 +26,15 @@ function createAccount() {
 
     for (textbox of textboxes) {
         if textbox.value == "" {
-            //add an error message claiming empty textbox 
+            //TODO: add an error message claiming empty textbox 
 
-            
+
             return; 
-        }
-        else {
-            
         }
     }
     //bring in every data from the textbox and create a user
         // if there is time, try to see if the email is valid (just check if @ is present)
+    
     
     // send user to the profile page 
 }
