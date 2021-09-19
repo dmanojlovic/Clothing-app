@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import { Link, withRouter } from "react-router-dom";
-
+import Header from './header';
 
 function Navigation(props) {
   return (
@@ -10,6 +10,7 @@ function Navigation(props) {
           {/* <text style={{fontSize: 50,}} className= "companyname" />
             Size Matcher */}
           <div>
+          <Header />
             <ul class="navbar-nav ml-auto">
               <li
                 class={`nav-item  ${

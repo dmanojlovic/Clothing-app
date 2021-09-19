@@ -1,9 +1,6 @@
 import React from "react";
 
 function Uniqlo() {
-  const popup = () => {
-    2
-  }
   
   return (
     <div className="uniqlo">
@@ -11,7 +8,7 @@ function Uniqlo() {
         <div class="row align-items-center my-5">
           <label class = "shirts">Shirts: 
           </label>
-          <select onClick = {popup}>
+          <select>
               <option>Waist Width</option>
               <option>Chest Width</option>
               <option>Arm Length</option>

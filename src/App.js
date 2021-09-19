@@ -11,7 +11,6 @@ import './global.js';
 function App() {
   return (
     <div className="App">
-      <Header />
       <Router>
         
         <Navigation />
