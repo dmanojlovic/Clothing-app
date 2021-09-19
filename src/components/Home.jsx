@@ -4,11 +4,11 @@ function Home() {
   return (
     <div className="home">
       <div class="container">
-        <div class="row align-items-center my-5">
-          <div class = "h3-header" id = "fav">
+        <div class = "h3-header" id = "fav">
           <h3><strong><u>Favorites</u></strong>
           </h3>
-          </div> 
+          </div>
+           <div class="row align-items-center my-5">
           <div class="company">
             <a href = "./Uniqlo"><img
               class = "company_pictures"

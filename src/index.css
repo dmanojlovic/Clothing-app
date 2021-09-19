@@ -109,3 +109,10 @@ icon-right {
 
 
 
+.company > label{
+  display: block;
+ text-align: center;
+}
+.company_pictures {
+  display: "block";
+}
