@@ -59,7 +59,7 @@ function Home() {
       </div>
       </div>
     </div>
-    </div>
+    
   );
 }
 export default Home;

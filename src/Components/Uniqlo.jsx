@@ -1,6 +1,6 @@
 import React from "react";
 
-function Brand() {
+function Uniqlo() {
   
   function myFunction() {
     var checkBox = document.getElementById("myCheck");
@@ -21,7 +21,12 @@ function Brand() {
           <div>
             <p class = "shirts">Shirts: M</p>
             <label for="myCheck">Checkbox:</label>
-            <input type="checkbox" id="myCheck" onClick= {myFunction} />
+            <select multiple>
+                <option value="blank">a</option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+            </select>
           </div>
           <div>
             <p class = "shorts">Shorts: M </p> 
@@ -37,9 +42,10 @@ function Brand() {
             <p id="text" style="display:none">Checkbox is CHECKED!</p>
         </div>
       </div>
-     </div>
-     </div>
+    </div>
+    </div>
+     
   );
 }
 
-export default Brand;
+export default Uniqlo;
