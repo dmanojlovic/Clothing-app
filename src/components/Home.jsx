@@ -5,11 +5,20 @@ function Home() {
     <div className="home">
       <div class="container">
         <div class="row align-items-center my-5">
+          <h3>Favorites
+          </h3>
           <div class="col-lg-7">
             <img
-              class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
+              class="uniqlo_pic"
+              src="https://upload.wikimedia.org/wikipedia/commons/9/92/UNIQLO_logo.svg"
               alt=""
+              href=""
+            />
+            <img
+              class="levis_pic"
+              src="https://upload.wikimedia.org/wikipedia/commons/0/09/Levis-logo-quer.svg"
+              alt=""
+              href=""
             />
           </div>
           <div class="col-lg-5">

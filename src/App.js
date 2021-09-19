@@ -1,8 +1,10 @@
 import { render } from "@testing-library/react";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, About, Contact, Social, Company, Login } from "./components";
+import { Navigation, Footer, Home, About, Contact, Social, Company, Login} from "./components";
 import { ReactDOM } from "react";
+import CompanyName from "./components/CompanyName";
+import "./index.css";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
           <Route path="/contact" exact component={() => <Contact />} />
           <Route path="/company" exact component={() => <Company />} />
           //<Route path="/login" exact component={() => <Login />} />
-        </Switch>
+        </Switch>       
+        {/* <CompanyName text="Size Matcher" /> */}
+            
         <Footer />
       </Router>
     </div>
