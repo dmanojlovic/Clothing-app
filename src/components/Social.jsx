@@ -21,7 +21,7 @@ function Social() {
             </p>
           </div>
           <div/>
-            <searchbar />
+            
           <div/>
           Your Friends:
         </div>
