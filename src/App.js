@@ -11,7 +11,9 @@ import './global.js';
 function App() {
   return (
     <div className="App">
+      <Header />
       <Router>
+        
         <Navigation />
         <Switch>
           <Route path="/" exact component={() => <Home />} />
@@ -22,7 +24,7 @@ function App() {
           <Route path="/login" exact component={() => <Login />} />
           <Route path="/uniqlostore" exact component={() => <Uniqlo />} />
         </Switch>       
-        <Header />
+        
             
         <Footer />
       </Router>

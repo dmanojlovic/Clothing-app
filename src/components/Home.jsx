@@ -14,12 +14,12 @@ function Home() {
               alt=""
               href="./uniqlostore"
             />
-            <img
+            <a href = "./Uniqlo"><img
               class="levis_pic"
               src="https://upload.wikimedia.org/wikipedia/commons/0/09/Levis-logo-quer.svg"
               alt=""
               href=""
-            />
+            /></a>
           </div>
           <div class="col-lg-5">
             <h1 class="font-weight-light">Home</h1>
