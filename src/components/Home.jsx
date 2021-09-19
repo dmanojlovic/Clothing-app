@@ -10,7 +10,7 @@ function Home() {
           </div>
            <div class="row align-items-center my-5">
           <div class="company">
-            <a href = "./Uniqlo"><img
+            <a href = "./Brand"><img
               class = "company_pictures"
               src="https://upload.wikimedia.org/wikipedia/commons/9/92/UNIQLO_logo.svg"
               alt=""
@@ -56,6 +56,7 @@ function Home() {
               </label>
           </div>
         </div>
+      </div>
       </div>
     </div>
   );
