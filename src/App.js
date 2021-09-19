@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Footer, Home, About, Contact, Social, Company, Login } from "./components";
 import { ReactDOM } from "react";
+import { AuthProvider } from './context/AuthContext'
 
 function App() {
   return (
