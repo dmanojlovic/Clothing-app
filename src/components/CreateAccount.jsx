@@ -1,10 +1,8 @@
 import React from "react";
 import '../global.js'
 
-var userpw = [{"cx": "poodoo"}];
-
-function Login() {
-  function login() {
+function CreateAccount() {
+  function createAccount() {
     //check if both boxes are filled 
     if (document.getElementById("getUsername") == "") {
         //show error message and end function
@@ -16,23 +14,21 @@ function Login() {
       document.getElementById("wrong_u/p").innerHTML = "Fill in your password.";
         return;
     }
+
+    //check if both passwords are the same 
+    if () {
+        
+    }
     
     let username = document.getElementById("getUsername");
     let password = document.getElementById("getPassword");
 
-    // check if username and password are in the database
-    // check if they belong to the same user
-    if (userpw.get(username) != password) {
-        document.getElementById("wrong_u/p").innerHTML = "Wrong username or password. Please try again.";
-        return;
-    }
-
     // bring the user to the profile page
-    document.getElementById("wrong_u/p").innerHTML = "yay it worked";
+    location.replace("localhost/8000");
 }
   
   return (
-    <div className="login">
+    <div className="create_account">
       <div class="container">
         <div class="rectangle">
             <label id = "wrong_u/p"></label>
@@ -43,12 +39,15 @@ function Login() {
             <label id = "password"> Password:
             </label>
             <input type = "text" id = "getPassword" placeholder = "Enter Password">  
+            <label id = "re-enter password"> Re-enter Password:
+            </label>
+            <input type = "text" id = "getPassword" placeholder = "Enter Password">  
             </input>
-            <button type = "submit" onclick = {login}></button>
+            <button type = "submit" onclick = {createAccount} id = "submit"></button>
         </div>
       </div>
     </div>
   );
 }
 
-export default Login;
+export default CreateAccount;
