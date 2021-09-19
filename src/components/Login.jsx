@@ -4,7 +4,7 @@ import '../global.js'
 var userpw = [{"cx": "poodoo"}];
 
 function Login() {
-  function login() {
+  const login = () => {
     //check if both boxes are filled 
     if (document.getElementById("getUsername") == "") {
         //show error message and end function
@@ -44,7 +44,7 @@ function Login() {
             </label>
             <input type = "text" id = "getPassword" placeholder = "Enter Password">  
             </input>
-            <button type = "submit" onclick = {login}></button>
+            <button type = "submit" onclick = {login}>Submit</button>
         </div>
       </div>
     </div>

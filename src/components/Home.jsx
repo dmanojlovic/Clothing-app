@@ -6,7 +6,7 @@ function Home() {
       <div class="container">
         <div class="row align-items-center my-5">
           <h3>Favorites
-          </h3> <br>
+          </h3> 
           <div class="col-lg-7">
             <img
               class="uniqlo_pic"

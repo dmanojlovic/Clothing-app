@@ -1,12 +1,11 @@
 import { render } from "@testing-library/react";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, About, Contact, Social, Company, Login, Uniqlo} from "./components";
+import { Navigation, Footer, Home, About, Contact, Social, Company, Login, Uniqlo, Header} from "./components";
 import { ReactDOM } from "react";
 import CompanyName from "./components/CompanyName";
 import "./index.css";
-import { Header } from './components/header';
-import from './global.js';
+import './global.js';
 
 
 function App() {
