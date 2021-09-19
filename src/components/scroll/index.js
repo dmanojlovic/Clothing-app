@@ -10,11 +10,10 @@ const breakPoints = [
   { width: 768, itemsToShow: 3 },
   { width: 1200, itemsToShow: 4 },
 ];
-
 function scroll() {
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
+      <h1 style={{ textAlign: "center" }}>Friends</h1>
       <div className="App">
         <Carousel breakPoints={breakPoints}>
           <Item>One</Item>

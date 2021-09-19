@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { Navigation, Footer, Home, About, Contact, Social, Company, Login, Uniqlo, Header} from "./components";
 import { ReactDOM } from "react";
-import CompanyName from "./components/CompanyName";
+import CompanyName from "./components/CompanyName.js";
 import "./index.css";
 import './global.js';
 
