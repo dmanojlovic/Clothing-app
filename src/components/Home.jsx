@@ -25,6 +25,8 @@ function Home() {
               alt=""
               
             />
+            <label>Adidas
+              </label>
           </div>
           <div class = "h3-header" id = "nearby" style = "text-align: center">
           <h3><strong><u>Nearby Stores</u></strong>
