@@ -111,3 +111,10 @@ icon-right {
   width: 600px;
 }
 
+.company > label{
+  display: block;
+ text-align: center;
+}
+.company_pictures {
+  display: "block";
+}
