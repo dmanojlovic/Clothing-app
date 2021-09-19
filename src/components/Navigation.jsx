@@ -18,7 +18,7 @@ function Navigation(props) {
                 }`}
               >
                 <Link class="nav-link" to="/">
-                  Home
+                  Store
                   <span class="sr-only">(current)</span>
                 </Link>
               </li>
@@ -28,7 +28,7 @@ function Navigation(props) {
                 }`}
               >
                 <Link class="nav-link" to="/about">
-                  About
+                  Input Size
                 </Link>
               </li>
               <li
