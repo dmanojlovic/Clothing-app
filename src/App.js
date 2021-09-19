@@ -42,17 +42,20 @@ function DropdownMenu(){
     return(
       <a href="#" className="menu-item">
         <span className="icon-button">{props.leftIcon}</span>
+       
         {props.children}
+        
         <span className="icon-right">{props.rightIcon}</span>
       </a>
     )
   }
   return(
     <div className="dropdownmenu">
-      <DropdownItem>My Profile</DropdownItem>
       <DropdownItem>
-          leftIcon="!0!"
-          rightIcon="0.0"
+        My Profile
+      </DropdownItem>
+      <DropdownItem>
+          
       </DropdownItem>
     </div>
   )
