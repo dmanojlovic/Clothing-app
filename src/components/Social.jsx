@@ -3,7 +3,7 @@ import React from "react";
 import './socialSearchBar/App.css';
 
 import NamesContainer from './socialSearchBar/NamesContainer';
-
+import scroll from './scroll';
 class App extends React.Component {
 
   state = {
