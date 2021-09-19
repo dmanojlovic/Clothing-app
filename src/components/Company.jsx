@@ -8,7 +8,7 @@ function Company() {
           <div class="col-lg-7">
             <img
               class="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
+              src="https://logos-download.com/wp-content/uploads/2016/09/React_logo_wordmark.png"
               alt=""
             />
           </div>

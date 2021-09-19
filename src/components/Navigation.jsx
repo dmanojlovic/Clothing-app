@@ -7,8 +7,6 @@ function Navigation(props) {
     <div className="navigation">
       <nav class="navbar navbar-expand navbar-dark bg-dark">
         <div class="container">        
-          {/* <text style={{fontSize: 50,}} className= "companyname" />
-            Size Matcher */}
           <div>
          
             <ul class="navbar-nav ml-auto">

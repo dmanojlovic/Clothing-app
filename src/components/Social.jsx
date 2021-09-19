@@ -1,4 +1,5 @@
 import React from "react";
+import scroll from './scroll';
 
 function Social() {
   return (
@@ -21,6 +22,7 @@ function Social() {
             </p>
           </div>
         </div>
+        <hscroll />
       </div>
     </div>
   );
