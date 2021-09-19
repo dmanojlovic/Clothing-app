@@ -19,6 +19,7 @@ function Home() {
               </label>
           </div>
           <div class = "company">
+            <a href = "./Brand?name=Levi's">
             <img
               class = "company_pictures"
               id="levis_pic"
@@ -26,6 +27,7 @@ function Home() {
               alt=""
             >
             </img>
+            </a>
             <label>Levi's
               </label>
           </div>
