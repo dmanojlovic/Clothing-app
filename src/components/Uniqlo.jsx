@@ -19,24 +19,26 @@ function Uniqlo() {
         </h2>
         <div>
           <div>
-          <p class = "shirts">Shirts: M
-          </p>
-          
+            <p class = "shirts">Shirts: M</p>
+            <label for="myCheck">Checkbox:</label>
+            <input type="checkbox" id="myCheck" onClick= {myFunction} />
           </div>
           <div>
-          <p class = "shorts">Shorts: M 
-          </p> 
+            <p class = "shorts">Shorts: M </p> 
+            <label for="myCheck">Checkbox:</label>
+            <input type="checkbox" id="myCheck" onClick= {myFunction} />
           </div>
           <div>
-          <p class = "pants">Pants: M
-          </p>
+            <p class = "pants">Pants: M</p>
+            <label for="myCheck">Checkbox:</label>
+            <input type="checkbox" id="myCheck" onClick= {myFunction} />
           </div>
-        </div>
-        
+        <div>
             <p id="text" style="display:none">Checkbox is CHECKED!</p>
         </div>
       </div>
     </div>
+    </div> 
   );
 }
 
