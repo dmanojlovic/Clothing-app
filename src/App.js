@@ -23,8 +23,6 @@ function App() {
           <Route path="/login" exact component={() => <Login />} />
           <Route path="/uniqlostore" exact component={() => <Uniqlo />} />
         </Switch>       
-        
-            
         <Footer />
       </Router>
     </div>

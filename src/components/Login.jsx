@@ -31,7 +31,7 @@ function Login() {
 
     // bring the user to the profile page
     document.getElementById("wrong_uspw").innerHTML = "yay it worked";
-}
+  }
   
   return (
     <div className="login">

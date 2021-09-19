@@ -16,9 +16,11 @@ function CreateAccount() {
     }
 
     //check if both passwords are the same 
-    if () {
+    
+    // if () {
         
-    }
+    // }
+    
     
     let username = document.getElementById("getUsername");
     let password = document.getElementById("getPassword");
@@ -38,7 +40,8 @@ function CreateAccount() {
             </input>
             <label id = "password"> Password:
             </label>
-            <input type = "text" id = "getPassword" placeholder = "Enter Password">  
+            <input type = "text" id = "getPassword" placeholder = "Enter Password"> 
+            </input> 
             <label id = "re-enter password"> Re-enter Password:
             </label>
             <input type = "text" id = "getPassword" placeholder = "Enter Password">  
