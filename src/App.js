@@ -1,28 +1,20 @@
-import { render } from "@testing-library/react";
 import React from "react";
-
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Navigation, Footer, Home, About, Contact } from "./components";
 function App() {
   return (
-    <Dropdown>
-      <DropItem icon="0_0"/>
-      <DropItem icon="0o0"/>
-      <DropItem icon="0+0"/>
-    </Dropdown>
-  )
-}
-function Dropdown(props){
-  return(
-    <nav className="dropbar">
-      <ul className="dropbar-nav">{props.children }</ul>
-    </nav>
-  )
-}
-function DropItem(props){
-  <li className="drop-item">
-    <a href="#" className="icon-button">
-      {props.icon}
-    </a>
-  </li>
+    <div className="App">
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route path="/" exact component={() => <Home />} />
+          <Route path="/about" exact component={() => <About />} />
+          <Route path="/contact" exact component={() => <Contact />} />
+        </Switch>
+        <Footer />
+      </Router>
+    </div>
+  );
 }
 
 export default App;
