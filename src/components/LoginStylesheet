@@ -1,0 +1,8 @@
+.rectangle{
+    background-color: "blue";
+    height: 400px;
+    width: 200px;
+    position:absolute; 
+    left:80px; 
+    top:20px; 
+}

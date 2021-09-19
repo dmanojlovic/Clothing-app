@@ -1,29 +1,60 @@
 import { render } from "@testing-library/react";
-import React from "react";
+import React, { useState } from "react";
 
 function App() {
   return (
     <Dropdown>
-      <DropItem icon="0_0"/>
-      <DropItem icon="0o0"/>
-      <DropItem icon="0+0"/>
-    </Dropdown>
+      <DropItem icon="Settings"/>
+      <DropItem icon="Profile"/>
+      <DropItem icon="Friends"/>
+      <DropItem icon="Stores"/>
+
+      <DropItem icon="+">
+        <DropdownMenu />
+      </DropItem>
+
+
+    </Dropdown> 
   )
 }
 function Dropdown(props){
   return(
-    <nav className="dropbar">
-      <ul className="dropbar-nav">{props.children }</ul>
+    <nav className="dropdown">
+      <ul className="dropdown-nav">{props.children }</ul>
     </nav>
   )
 }
 function DropItem(props){
+  const [open, setOpen] = useState(false);
+
   return(
   <li className="drop-item">
-    <a href="#" className="icon-button">
+    <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
       {props.icon}
     </a>
+
+    {open && props.children}
   </li>
+  )
+}
+function DropdownMenu(){
+  function DropdownItem(props){
+    return(
+      <a href="#" className="menu-item">
+        <span className="icon-button">{props.leftIcon}</span>
+        {props.children}
+        <span className="icon-right">{props.rightIcon}</span>
+      </a>
+    )
+  }
+  return(
+    <div className="dropdownmenu">
+      <DropdownItem>My Profile</DropdownItem>
+      <DropdownItem>
+          leftIcon="!0!"
+          rightIcon="0.0"
+      </DropdownItem>
+    </div>
   )
 }
 

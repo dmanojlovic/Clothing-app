@@ -1,0 +1,19 @@
+import React from "react";
+import "./LoginStylesheet.css";
+
+function loginPage() {
+    
+    return (
+        <div className="loginPage">
+            <div class = "background">
+                <div class = rectangle>
+                    <div class>
+                        Username:
+                    </div>
+                </div> 
+            </div>
+    </div>
+  );
+}
+
+export default loginPage;

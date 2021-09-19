@@ -3,17 +3,21 @@
 //create the users array
 const users = [];
 
+//create a dict of username:pw key-value pair 
+const user-pw = new Map();
+
+//global variables
+var current_user;
 
 //define the user profile 
 class user {
-    constructor (username, password, chestWidth,
-        waistWidth, armLength, legLength) {
+    constructor (username, password) {
         this.username = username;
         this.password = password; 
-        this.chestWidth = chestWidth;
-        this.waistWidth = waistWidth;
-        this.armLength = armLength;
-        this.legLength = legLength;
+        this.chestWidth = 0;
+        this.waistWidth = 0;
+        this.armLength = 0;
+        this.legLength = 0;
     }
 }
 
@@ -57,13 +61,14 @@ function login() {
     let password = document.getElementById("getPassword");
 
     // check if username and password are in the database
-    for (let i of users) {
-        if (usern)
+    // check if they belong to the same user
+    if (user-pw.get(username) != password) {
+        //error message 
+        return;
     }
 
-    // check if they belong to the same user
-    // bring the user to the profile page if successful
-        // if not, print an error message on the website 
+    // bring the user to the profile page
+
 }
 
 // go to profile page when user clicks the link to profile page

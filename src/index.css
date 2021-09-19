@@ -15,7 +15,7 @@ code {
   --bg: #378bdf;
   --bg-accent: #484a4d;
   --text-color: #dadce1;
-  --nav-size: 60px;
+  --nav-size: 80px;
   --border: 1px solid #474a4d;
   --border-radius: 8px;
   --speed: 500ms;
@@ -63,4 +63,29 @@ a {
 }
 .icon-button:hover {
   filter: brightness(1.2);
+}
+.dropdownmenu{
+  position: absolute;
+  top: 58px;
+  width: 300px;
+  transform: translateX(-45%);
+  background-color: var(--bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 1 rem;
+  overflow: hidden;
+}
+.menu-item{
+  height: 50px;
+  dislpay: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  tranition: background var(--speed);
+  padding: 0.5rem;
+}
+.menu-item:hover {
+  background-color: #525357;
+}
+icon-right {
+  margin-left: auto;
 }
