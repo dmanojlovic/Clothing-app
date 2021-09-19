@@ -11,6 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+<<<<<<< HEAD
+=======
 :root {
   /* --bg: #378bdf; */
   --bg-accent: #dde0e4;
@@ -111,3 +113,4 @@ icon-right {
   width: 600px;
 }
 
+>>>>>>> ff6f2a1b5e4641122099a70f9448beb51b9b9dcc

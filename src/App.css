@@ -1,0 +1,93 @@
+.app {
+  text-align: center;
+}
+
+.header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50vw 50vw;
+}
+
+.add-task {
+  padding: 30px;
+}
+
+.text-input {
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 250px;
+  height: 30px;
+  padding-left: 10px;
+}
+
+.text-input::placeholder {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.text-input:focus {
+  outline: none;
+}
+
+.add-button {
+  display: inline-block;
+  padding: 0.7em 1.4em;
+  margin: 10px;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: #ffffff;
+  background-color: #3369ff;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.del-button {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 0.15em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  color: #ffffff;
+  background-color: #ca0101;
+  box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+  border: none;
+  text-align: center;
+  position: relative;
+}
+
+.add-button:active,
+.del-button:active {
+  top: 0.1em;
+}
+
+.add-button:focus,
+.del-button:focus {
+  outline: none;
+}

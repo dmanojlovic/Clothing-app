@@ -1,3 +1,14 @@
+<<<<<<< HEAD
+import React from "react";
+import './App.css';
+import profilepage from './Components/profilepage'
+function App() {
+  return (
+    <div className='container'>
+      <h1/>Title here
+    </div>
+  )
+=======
 import { render } from "@testing-library/react";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -27,6 +38,7 @@ function App() {
       </Router>
     </div>
   );
+>>>>>>> ff6f2a1b5e4641122099a70f9448beb51b9b9dcc
 }
 
 export default App;
