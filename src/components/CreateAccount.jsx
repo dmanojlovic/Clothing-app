@@ -45,7 +45,11 @@ function CreateAccount() {
             </label>
             <input type = "text" id = "getPassword" placeholder = "Re-enter Password">  
             </input>
-            <button type = "submit" onclick = {createAccount} id = "submit"></button>
+            <label id = "re-enter password"> Enter your email address:
+            </label>
+            <input type = "text" id = "getPassword" placeholder = "Enter email address">  
+            </input>
+            <button type = "submit" onClick = {createAccount} id = "submit"></button>
         </div>
       </div>
     </div>

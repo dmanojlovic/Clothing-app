@@ -29,14 +29,14 @@ function Home() {
             </img>
             </a>
             <label>Levi's
-              </label>
+            </label>
           </div>
           <div class ="h3-header" id = "nearby" > 
-          <h3><strong><u>Nearby Stores</u></strong>
-          </h3>
-          <div>
-          </div>
-          <div class = "company">
+            <h3><strong><u>Nearby Stores</u></strong>
+            </h3>
+              <div>
+              </div>
+            <div class = "company">
               <a href = "./Brand?name=HnM">
               <img 
               class = "company_pictures" 
@@ -48,21 +48,21 @@ function Home() {
               </a>
               <label>H&amp;M (1 mile from your location)
               </label>
-           </div>
+            </div>
            <div class = "company">
-           <a href = "./Brand?name=Adidas" />
-              <img 
-              class = "company_pictures"
-              id = "Adidas" 
-              src = "https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" 
-              alt="">
-              </img>
-              <a/>
+              <a href = "./Brand?name=Adidas">
+                <img 
+                class = "company_pictures"
+                id = "Adidas" 
+                src = "https://upload.wikimedia.org/wikipedia/commons/2/20/Adidas_Logo.svg" 
+                alt="">
+                </img>
+              </a>
               <label>Adidas (2 miles from your location)
-            </label>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </div>
     
