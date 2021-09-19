@@ -1,15 +1,15 @@
 import React from "react";
-// import {
-//   useLocation
-// }  from "react-router-dom"
+import {
+  useLocation
+}  from "react-router-dom"
 
-// function useQuery() {
-//   return new URLSearchParams(useLocation().search);
-// }
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 
 function Brand() {
 
-// let query = useQuery();
+let query = useQuery();
 
   function myFunction() {
     var checkBox1 = document.getElementById("myCheck1");
@@ -32,8 +32,8 @@ function Brand() {
   return (
     <div className="uniqlo">
       <div class="container">
-        {/* <h2><strong><u>{query.get("name")}</u></strong>
-        </h2> */}
+        <h2><strong><u>{query.get("name")}</u></strong>
+        </h2>
         <div>
           <div>
             <p class = "shirts">Shirts: M</p>
