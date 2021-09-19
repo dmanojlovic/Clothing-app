@@ -24,5 +24,28 @@ function Social() {
     </div>
   );
 }
+// import React from "react";
+// import "../App.css";
 
+// class AddTask extends React.Component {
+//   render() {
+//     return (
+//       <div className="add-task">
+//         <input
+//           name="task-input"
+//           type="text"
+//           id="task"
+//           className="text-input"
+//           placeholder="Enter your next task..."
+//           autoComplete="off"
+//         />
+//         <button onClick={this.props.handleAddButton} className="add-button">
+//           Add task
+//         </button>
+//       </div>
+//     );
+//   }
+// }
+
+// export default AddTask;
 export default Social;

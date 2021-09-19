@@ -21,7 +21,7 @@ function Navigation(props) {
                 }`}
               >
                 <Link class="nav-link" to="/">
-                  Store
+                  Stores
                   <span class="sr-only">(current)</span>
                 </Link>
               </li>
