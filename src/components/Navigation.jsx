@@ -1,15 +1,36 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link, withRouter } from "react-router-dom";
+
+function DropItem(props){
+  const [open, setOpen] = useState(false);
+ 
+  return(
+  <li className="drop-item">
+    <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+      {props.icon}
+    </a>
+ 
+    {open && props.children}
+  </li>
+  )
+ }
+
+ function Dropdown(props){
+  return(
+    <nav className="dropdown">
+      <ul className="dropdown-nav">{props.children }</ul>
+    </nav>
+  )
+ }
 
 function Navigation(props) {
   return (
     <div className="navigation">
       <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <div class="container">
-          <Link class="navbar-brand" to="/">
-            React Multi-Page Website
-          </Link>
-
+        <div class="container">        
+          <compname />
+          Size Matcher
+         
           <div>
             <ul class="navbar-nav ml-auto">
               <li
@@ -22,6 +43,7 @@ function Navigation(props) {
                   <span class="sr-only">(current)</span>
                 </Link>
               </li>
+              
               <li
                 class={`nav-item  ${
                   props.location.pathname === "/about" ? "active" : ""
@@ -33,6 +55,15 @@ function Navigation(props) {
               </li>
               <li
                 class={`nav-item  ${
+                  props.location.pathname === "/social" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/social">
+                  Social
+                </Link>
+              </li>
+              <li
+                class={`nav-item  ${
                   props.location.pathname === "/contact" ? "active" : ""
                 }`}
               >
@@ -40,8 +71,23 @@ function Navigation(props) {
                   Contact
                 </Link>
               </li>
+              <li
+                class={`nav-item  ${
+                  props.location.pathname === "/company" ? "active" : ""
+                }`}
+              >
+                <Link class="nav-link" to="/company">
+                  About Us
+                </Link>
+              </li>
+              <li>
+              <Dropdown>
+                <img src="../../public/Profile.jpeg" />
+              </Dropdown>
+              </li>
             </ul>
-          </div>
+          </div>  
+             
         </div>
       </nav>
     </div>
