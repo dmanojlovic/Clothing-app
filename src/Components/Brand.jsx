@@ -34,7 +34,7 @@ function Brand() {
             <input type="checkbox" id="myCheck" onClick= {myFunction} />
           </div>
         <div>
-            <p id="text" style="display:none">Checkbox is CHECKED!</p>
+            <p id="text" style={{display:"none"}}>Checkbox is CHECKED!</p>
         </div>
       </div>
      </div>

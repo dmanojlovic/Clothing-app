@@ -29,7 +29,7 @@ function Home() {
             <label>Levi's
               </label>
           </div>
-          <div class ="h3-header" id = "nearby" > <br> </br>
+          <div class ="h3-header" id = "nearby" > 
           <h3><strong><u>Nearby Stores</u></strong>
           </h3>
           <div>
@@ -44,8 +44,8 @@ function Home() {
               </img>
               <label>H&amp;M (1 mile from your location)
               </label>
-          </div>
-          <div class = "company">
+           </div>
+           <div class = "company">
               <img 
               class = "company_pictures"
               id = "Adidas" 
@@ -53,7 +53,7 @@ function Home() {
               alt="">
               </img>
               <label>Adidas (2 miles from your location)
-              </label>
+            </label>
           </div>
         </div>
       </div>

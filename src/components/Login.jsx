@@ -4,7 +4,7 @@ import '../global.js'
 var userpw = [{"cx": "poodoo"}];
 
 function Login() {
-  const login = () => {
+  function login() {
     //check if username box are filled 
     if (document.getElementById("getUsername") == "") {
         

@@ -1,6 +1,6 @@
 import React from "react";
 
-function Uniqlo() {
+function Brand() {
   
   function myFunction() {
     var checkBox = document.getElementById("myCheck");
@@ -18,34 +18,31 @@ function Uniqlo() {
         <h2><strong><u>Uniqlo</u></strong>
         </h2>
         <div>
-          <div>
-            <p class = "shirts">Shirts: M</p>
+          <div class = "shirts">
+            <p>Shirts: M</p>
             <label for="myCheck">Checkbox:</label>
             <select multiple onChange = {changeList}>
                 <option value="blank"></option>
-                <option value="a">a</option>
-                <option value="b">b</option>
-                <option value="c">c</option>
+                <option value="a">Chest</option>
+                <option value="b">Waist</option>
+                <option value="c">Arm Length</option>
             </select>
           </div>
-          <div>
-            <p class = "shorts">Shorts: M </p> 
+          <div class = "shorts">
+            <p>Shorts: M </p> 
             <label for="myCheck">Checkbox:</label>
             <select multiple onChange = {changeList}>
                 <option value="blank"></option>
-                <option value="a">a</option>
-                <option value="b">b</option>
-                <option value="c">c</option>
+                <option value="a">Waist Length</option>
             </select>
           </div>
-          <div>
-            <p class = "pants">Pants: M</p>
+          <div class = "pants">
+            <p>Pants: M</p>
             <label for="myCheck">Checkbox:</label>
             <select multiple onChange = {changeList}>
                 <option value="blank"></option>
-                <option value="a">a</option>
-                <option value="b">b</option>
-                <option value="c">c</option>
+                <option value="a">Waist Length</option>
+                <option value="b">Leg Length</option>
             </select>
           </div>
         <div>
@@ -58,4 +55,4 @@ function Uniqlo() {
   );
 }
 
-export default Uniqlo;
+export default Brand;

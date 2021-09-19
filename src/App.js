@@ -1,7 +1,7 @@
 import { render } from "@testing-library/react";
 import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { Navigation, Footer, Home, About, Contact, Social, Company, Login, Uniqlo, Header} from "./components";
+import { Navigation, Footer, Home, About, Contact, Social, Company, Login, Brand, Header} from "./components";
 import { ReactDOM } from "react";
 import CompanyName from "./components/CompanyName.js";
 import "./index.css";
@@ -22,10 +22,9 @@ function App() {
           <Route path="/contact" exact component={() => <Contact />} />
           <Route path="/company" exact component={() => <Company />} />
           <Route path="/login" exact component={() => <Login />} />
-          <Route path="/uniqlostore" exact component={() => <Uniqlo />} />
+   
+          <Route path="/brand" exact component={() => <Brand />} />
         </Switch>       
-        
-            
         
       </Router>
     </div>
