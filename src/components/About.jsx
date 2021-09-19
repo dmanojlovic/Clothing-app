@@ -1,5 +1,6 @@
 import React from "react";
-import Table from './sizetable'
+import Table from './sizetable/Basictable.js';
+
 function About() {
   return (
     <div className="about">

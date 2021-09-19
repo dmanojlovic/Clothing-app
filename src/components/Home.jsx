@@ -50,7 +50,7 @@ function Home() {
               </label>
            </div>
            <div class = "company">
-           <a href = "./Brand?name=Adidas">
+           <a href = "./Brand?name=Adidas" />
               <img 
               class = "company_pictures"
               id = "Adidas" 

@@ -51,7 +51,7 @@ function Brand() {
             <input type="checkbox" id="myCheck3" onClick= {myFunction} />
           </div>
         
-        <div class = "radio", style = {{display: "none"}}>
+        <div class = "radio" style = {{display: "none"}}>
 
             <h1>Feedback on Clothing</h1>
             <label class="container">Way too big (by 3-5 inches)
