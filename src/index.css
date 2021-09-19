@@ -118,3 +118,8 @@ icon-right {
 .company_pictures {
   display: "block";
 }
+
+#HnM {
+  height: 200px;
+  width: 250px;
+}

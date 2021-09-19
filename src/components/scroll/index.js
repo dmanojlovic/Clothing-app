@@ -1,17 +1,17 @@
 import React, {useState} from "react";
 import ReactDOM from "react-dom";
-
 import items from "./Items";
+import Carousel from "react-elastic-carousel";
 import "./styles.css";
 
-const breakPoints = [
+const breakpoints = [
     { width: 1, itemsToShow: 1 },
     { width: 550, itemsToShow: 2, itemsToScroll: 2 },
     { width: 768, itemsToShow: 3 },
     { width: 1200, itemsToShow: 4 }
   ];
   function Hscroll() {
-    const [Items, setItems] = useState([1, 2, 3, 4]);
+    const [Items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8, 9]);
   
     const addItem = () => {
       const nextItem = Math.max(1, Items.length + 1);
@@ -30,17 +30,17 @@ const breakPoints = [
         </div>
         <hr className="seperator" />
         <div className="carousel-wrapper">
-          <carousel breakPoints={breakPoints}>
+          <Carousel breakpoints={breakpoints}>
             {Items.map((item) => (
               <item key={item}>{item}</item>
             ))}
-          </carousel>
+          </Carousel>
         </div>
       </div>
     );
   }
   
   const rootElement = document.getElementById("root");
-  ReactDOM.render(<hscroll />, rootElement);
+  ReactDOM.render(<Hscroll />, rootElement);
 export default Hscroll;
   
