@@ -213,7 +213,8 @@ Classes
         method_2() { ... }
         method_3() { ... }
         }
-Documents 
+    - no overloading
+Document (from html)
     - Getting input 
         - document.getElementById(id)	Find an element by element id
             document.getElementsByTagName(name)	Find elements by tag name
