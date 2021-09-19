@@ -1,6 +1,6 @@
 import React from "react";
 
-function Uniqlo() {
+function Brand() {
   
   function myFunction() {
     var checkBox = document.getElementById("myCheck");
@@ -37,9 +37,12 @@ function Uniqlo() {
             <p id="text" style="display:none">Checkbox is CHECKED!</p>
         </div>
       </div>
+<<<<<<< HEAD:src/components/Uniqlo.jsx
     </div>
     </div> 
+=======
+>>>>>>> f74fd757786b2c4065a091a3a55c48f09974e07c:src/Components/Brand.jsx
   );
 }
 
-export default Uniqlo;
+export default Brand;

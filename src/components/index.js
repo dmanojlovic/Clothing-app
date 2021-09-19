@@ -6,5 +6,6 @@ export { default as Contact } from "./Contact";
 export { default as Social } from "./Social";
 export { default as Company } from "./Company";
 export { default as Login } from "./Login";
-export { default as Uniqlo } from "./Uniqlo";
+export { default as Uniqlo } from "./Brand";
 export { default as Header } from "./header";
+export { default as BrandPage } from "./Brand"

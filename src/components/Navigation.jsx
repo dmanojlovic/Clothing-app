@@ -12,7 +12,7 @@ function Navigation(props) {
             <ul class="navbar-nav ml-auto">
              
               <li/>
-               
+                <Header />
               <li
                 class={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""
