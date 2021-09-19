@@ -21,8 +21,8 @@ function Uniqlo() {
           <div>
             <p class = "shirts">Shirts: M</p>
             <label for="myCheck">Checkbox:</label>
-            <select multiple>
-                <option value="blank">a</option>
+            <select multiple onChange = {changeList}>
+                <option value="blank"></option>
                 <option value="a">a</option>
                 <option value="b">b</option>
                 <option value="c">c</option>
@@ -31,12 +31,22 @@ function Uniqlo() {
           <div>
             <p class = "shorts">Shorts: M </p> 
             <label for="myCheck">Checkbox:</label>
-            <input type="checkbox" id="myCheck" onClick= {myFunction} />
+            <select multiple onChange = {changeList}>
+                <option value="blank"></option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+            </select>
           </div>
           <div>
             <p class = "pants">Pants: M</p>
             <label for="myCheck">Checkbox:</label>
-            <input type="checkbox" id="myCheck" onClick= {myFunction} />
+            <select multiple onChange = {changeList}>
+                <option value="blank"></option>
+                <option value="a">a</option>
+                <option value="b">b</option>
+                <option value="c">c</option>
+            </select>
           </div>
         <div>
             <p id="text" style="display:none">Checkbox is CHECKED!</p>
