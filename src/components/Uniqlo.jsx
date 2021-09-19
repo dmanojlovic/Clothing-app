@@ -12,8 +12,8 @@ function Uniqlo() {
           </p>
           <p class = "shorts">Shorts: M 
           </p>
-          <label class = "pants">Pants: M
-          </label>
+          <p class = "pants">Pants: M
+          </p>
         </div>
       </div>
     </div>
