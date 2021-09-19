@@ -2,6 +2,16 @@ import React from "react";
 
 function Uniqlo() {
   
+  function myFunction() {
+    var checkBox = document.getElementById("myCheck");
+    var text = document.getElementById("text");
+    if (checkBox.checked == true){
+      text.style.display = "block";
+    } else {
+      text.style.display = "none";
+    }
+  }
+
   return (
     <div className="uniqlo">
       <div class="container">
@@ -11,12 +21,19 @@ function Uniqlo() {
           <div>
           <p class = "shirts">Shirts: M
           </p>
-          <div></div>
+          
           </div>
+          <div>
           <p class = "shorts">Shorts: M 
-          </p>
+          </p> 
+          </div>
+          <div>
           <p class = "pants">Pants: M
           </p>
+          </div>
+        </div>
+        
+            <p id="text" style="display:none">Checkbox is CHECKED!</p>
         </div>
       </div>
     </div>
