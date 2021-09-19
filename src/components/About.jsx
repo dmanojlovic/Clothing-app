@@ -13,10 +13,10 @@ function About() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">About</h1>
+            <h1 class="font-weight-light">Sizes</h1>
             <p>
-              A couple of people who only had experience in Java and Python, decided to use React :)
-              This is what can be done in 24 hours with barely any previous experience.
+              Input how clothes fit you to find the perfect size at each
+              store.
             </p>
           </div>
         </div>

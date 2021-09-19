@@ -4,7 +4,7 @@ import hfont from "./hfont.css";
 function Header() {
     return(
         <section className="header">
-                    <a href="/" className="header-logo">Size Matcher</a>
+                    <a className="header-logo">Size Matcher</a>
         </section>
     )
 }

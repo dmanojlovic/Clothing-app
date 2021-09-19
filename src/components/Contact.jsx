@@ -15,9 +15,11 @@ function Contact() {
           <div class="col-lg-5">
             <h1 class="font-weight-light">Contact</h1>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsu an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
+              If you have any questions about our service or you need
+              assistance you can call us using our phone number
+              1-800-999-9999
+              or email us at
+              BeeSlappers@gmail.com
             </p>
           </div>
         </div>

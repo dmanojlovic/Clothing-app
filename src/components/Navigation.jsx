@@ -10,8 +10,11 @@ function Navigation(props) {
           {/* <text style={{fontSize: 50,}} className= "companyname" />
             Size Matcher */}
           <div>
-          <Header />
+         
             <ul class="navbar-nav ml-auto">
+             
+              <li/>
+                <Header />
               <li
                 class={`nav-item  ${
                   props.location.pathname === "/" ? "active" : ""

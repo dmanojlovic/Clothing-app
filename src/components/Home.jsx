@@ -8,18 +8,17 @@ function Home() {
           <h3>Favorites
           </h3> 
           <div class="col-lg-7">
-            <img
+            <a href = "./Uniqlo"><img
               class="uniqlo_pic"
               src="https://upload.wikimedia.org/wikipedia/commons/9/92/UNIQLO_logo.svg"
               alt=""
-              href="./uniqlostore"
-            />
-            <a href = "./Uniqlo"><img
+            /></a>
+            <img
               class="levis_pic"
               src="https://upload.wikimedia.org/wikipedia/commons/0/09/Levis-logo-quer.svg"
               alt=""
               href=""
-            /></a>
+            />
           </div>
           <div class="col-lg-5">
             <h1 class="font-weight-light">Home</h1>
