@@ -1,6 +1,6 @@
 import React from "react";
 import Hscroll from './scroll';
-
+import searchbar from './scroll/Searchbar';
 function Social() {
   return (
     <div className="social">
@@ -20,9 +20,16 @@ function Social() {
               your friends and family clothing that you know will fit.
             </p>
           </div>
+          <div/>
+            <searchbar />
+          <div/>
+          Your Friends:
         </div>
         <Hscroll />
       </div>
+      <div/>
+      People you may know
+      <Hscroll />
     </div>
   );
 }

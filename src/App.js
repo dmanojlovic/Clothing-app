@@ -22,7 +22,6 @@ function App() {
           <Route path="/contact" exact component={() => <Contact />} />
           <Route path="/company" exact component={() => <Company />} />
           <Route path="/login" exact component={() => <Login />} />
-   
           <Route path="/brand" exact component={() => <Brand />} />
         </Switch>       
         

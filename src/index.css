@@ -123,3 +123,7 @@ icon-right {
   height: 200px;
   width: 250px;
 }
+
+.radio {
+  display: "none";
+}
