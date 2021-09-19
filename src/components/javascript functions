@@ -1,0 +1,98 @@
+//JS functions for the website 
+
+//create the users array
+const users = [];
+
+//create a dict of username:pw key-value pair 
+const user-pw = new Map();
+
+//global variables
+var current_user;
+
+//define the user profile 
+class user {
+    constructor (username, password) {
+        this.username = username;
+        this.password = password; 
+        this.chestWidth = 0;
+        this.waistWidth = 0;
+        this.armLength = 0;
+        this.legLength = 0;
+    }
+}
+
+//when the create account button is clicked 
+function createAccount() {
+    //make sure all the textboxes are filled 
+    
+    //create an array of textboxes 
+    const textboxes = document.getElementsByClassName("form");
+
+    for (textbox of textboxes) {
+        if textbox.value == "" {
+            //TODO: add an error message claiming empty textbox 
+
+
+            return; 
+        }
+    }
+    //bring in every data from the textbox and create a user
+        // if there is time, try to see if the email is valid (just check if @ is present)
+    let username = document.getElementById("getUsername");
+    let password = document.getElementById("getPassword");
+    
+    // send user to the profile page 
+}
+
+//when the login button is clicked
+function login() {
+    //check if both boxes are filled 
+    if (document.getElementById("getUsername") == "") {
+        //show error message and end function
+        return;
+    }
+    //check if password box is filled 
+    if (document.getElementById("getPassword") == "") {
+        //show error message and end function
+        return;
+    }
+    
+    let username = document.getElementById("getUsername");
+    let password = document.getElementById("getPassword");
+
+    // check if username and password are in the database
+    // check if they belong to the same user
+    if (user-pw.get(username) != password) {
+        //error message 
+        return;
+    }
+
+    // bring the user to the profile page
+
+}
+
+// go to profile page when user clicks the link to profile page
+function goToProfilePage() {
+    //
+}
+
+// go to input size page when user clicks the link to profile page
+function goToInputSizePage() {
+    //
+}
+
+// go to store page when user clicks the link to profile page
+function goToStorePage() {
+    //
+}
+
+//when the user provides feedback on a piece of clothing
+function inputSize() {
+    //loop through any element which are textboxes on the webpage
+        // and check if only 1 of them is selected 
+
+    // bunch of if-statements over the 4 buttons
+        // add or subtract inches to certain attributes
+        // depending what the complaint was 
+}
+

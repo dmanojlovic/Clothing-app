@@ -1,0 +1,233 @@
+JS notes
+change HTML elements
+- doc.getElementById().innerHTML() = "String";
+
+changing HTML attribute values
+hide HTML elements
+show HTML elements
+
+<script> tag
+- insert JS code in between
+- event & functions (later on)
+- can place any number
+- placed in the <body> or the <head>
+    - can even be placed in external files
+    <script src = "myScript.js"></script>
+
+Output (to HTML)
+- innerHTML (modify a certain element by its id)
+    - document.getElementById(id) method
+        - eg document.getElementById("demo").innerHTML = 5 + 6;
+- document.write() (useful for testing purposes)
+    - never call it after the doc has finished loading, it will overwrite the entire doc
+- window.alert() (creates an alert box)
+- console.log() (debugging purposes)
+
+statements:
+- initialized
+    - var, let, const declares variables 
+    - let x,y,z; 
+    - var x;
+
+    - other rules same as java;
+
+- keywords
+    - var	Declares a variable
+    - let	Declares a block variable
+    - const	Declares a block constant
+    - if	Marks a block of statements to be executed on a condition
+    - switch	Marks a block of statements to be executed in different cases
+    - for	Marks a block of statements to be executed in a loop
+    - function	Declares a function
+    - return	Exits a function
+    - try	Implements error handling to a block of statements
+
+- data types (dynamic like python)
+    - numbers (int and double)
+        - includes scientific notation (123e5, 123e-5)
+    - strings 
+    - boolean ()
+
+- naming conventions 
+    - $: often use it as an alias for the main function in a JavaScript library.
+    - _: use it as an alias for "private (hidden)" variables.
+
+- let
+    - cannot be redeclared (ie do let x twice) in the same block
+    - provides block scope (ie if defined in a {}, cannot be used outside of it)
+- var
+    - can be accessed outside of its block {}
+    - can be redeclared (and change types)
+    - can be hoisted 
+- const (used to declare arrays, Objects, function and regexp)
+    - cannot be reassigned 
+    - MUST be assigned from the start 
+        - can be reassigned/declared in a different block or scope 
+
+    - same w let in terms of block scope 
+
+    - array elements can be changed, but array cannot be reassigned 
+        - same with object attributes 
+
+Type Operators
+    - typeof: returns type of var
+    - instanceof: returns true if obj is an instance of an obj type 
+
+Array 
+    - const cars = ["Volvo", "Chevy", "BMW"];
+
+Objects 
+    - const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+functions
+    - syntax
+        - function myFunction(param1, param2, ...) {
+            //the function 
+            //eg return param1 + param2;
+        }
+    
+    - Function Invocation
+        -The code inside the function will execute when "something" invokes (calls) the function:
+            - When an event occurs (when a user clicks a button)
+            - When it is invoked (called) from JavaScript code
+            - Automatically (self invoked)
+
+Objects 
+- Contains properties and methods 
+    - syntax ()
+        - const car = {type:"Fiat", model:"500", color:"white"};
+    - Accessing obj properties
+        - objectName.propertyName
+        - objectName["propertyName"]
+- Methods 
+    - actions performed on objs, stored in properties as fn defintions 
+        - eg fullName : function() {
+                return this.firstName + " " + this.lastName;
+            }
+    - this keyword 
+        - refers to owner of function 
+    - Accessing obj methods 
+        - objectName.methodName()
+        - name = person.fullName();
+
+Events 
+- syntax: <button <event_type>="<function>">The time is?</button>
+- HTML events 
+    - common events 
+        - onchange	An HTML element has been changed
+        - onclick	The user clicks an HTML element
+        - onmouseover	The user moves the mouse over an HTML element
+        - onmouseout	The user moves the mouse away from an HTML element
+        - onkeydown	The user pushes a keyboard key
+        - onload	The browser has finished loading the page
+    - Event handlers can be used to handle and verify user input, user actions, and browser actions:
+
+            Things that should be done every time a page loads
+            Things that should be done when the page is closed
+            Action that should be performed when a user clicks a button
+            Content that should be verified when a user inputs data
+            And more ..
+
+    - Many different methods can be used to let JavaScript work with events:
+
+            HTML event attributes can execute JavaScript code directly
+            HTML event attributes can call JavaScript functions
+            You can assign your own event handler functions to HTML elements
+            You can prevent events from being sent or being handled
+            And more ...
+
+Strings 
+- Methods 
+    - .length
+    - can use == to compare (unlike java)
+    - === requires equality in data type and value 
+
+    - slice(start, end) (accepts negs)
+    - substring(start, end) (same as slice, cannot accept neg values)
+    - substr(start, length)
+
+    - replace(string1, string2) 
+        - To replace all matches, use a regular expression with a /g flag (global match):
+    
+    - toUppercase()
+    - toLowerCase()
+
+    - trim()
+
+    - charAt() --> returns the char 
+    - charCodeAt() --> returns ascii
+    - string[int] --> returns the char at the position
+        - however, cannot be used to change a string thru changing its chars 
+
+    -split(char to split on) --> turn string into an array
+
+    - for searching 
+        String.indexOf(String, optional start position) (cannot take regex)
+        String.lastIndexOf(String, optional start position)
+        String.search() (cannot take 2nd start postions)
+        String.match(regex);
+
+        String.includes(string) --> return true if its inside 
+        String.startsWith(string, start)
+        String.endsWith(string, length)
+- 
+- Vars in string 
+    - let firstName = "John";
+        let lastName = "Doe";
+
+        let text = `Welcome ${firstName}, ${lastName}!`;
+
+    - can make HTML templates
+
+Numbers:
+    - Number()	Returns a number, converted from its argument.
+    parseFloat()	Parses its argument and returns a floating point number
+    parseInt()	Parses its argument and returns an integer
+
+Arrays:
+    - methods 
+        - .length
+        - array.sort()
+
+        array.push() --> add element at the end
+            - or array[array.length] = "lol";
+            - returns new array length
+        pop()
+            - remove the last element (and returns the value )
+        shift()
+            - remove 1st element and shifts everything else left
+        unshift()
+            - adds a new element to an array (at the beginning), and "unshifts" older elements:
+        - toString() --> converts array to string
+        - join(separator) --> same as toString
+
+    - looping
+        - a for loop
+        - array.forEach(function) --> applies the function to each value 
+
+Classes
+    - syntax
+    - class ClassName {
+        constructor() { ... }
+        method_1() { ... }
+        method_2() { ... }
+        method_3() { ... }
+        }
+    - no overloading
+Document (from html)
+    - Getting input 
+        - document.getElementById(id)	Find an element by element id
+            document.getElementsByTagName(name)	Find elements by tag name
+            document.getElementsByClassName(name)	Find elements by class name
+          const x = document.querySelectorAll("p.intro") Find element by CSS selector 
+    - changing Content
+        - element.innerHTML =  new html content	Change the inner HTML of an element
+        element.attribute = new value	Change the attribute value of an HTML element
+        element.style.property = new style	Change the style of an HTML element
+        Method	Description
+        element.setAttribute(attribute, value)	Change the attribute value of an HTML element
+    - adding or deleting elements 
+        -document.getElementById(id).onclick = function(){code}	Adding event handler code to an onclick event
+
+    
+    
