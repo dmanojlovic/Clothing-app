@@ -1,5 +1,5 @@
 import React from "react";
-import scroll from './scroll';
+import Hscroll from './scroll';
 
 function Social() {
   return (
@@ -9,7 +9,6 @@ function Social() {
           <div class="col-lg-7">
             <a href = "https://scontent-ort2-1.xx.fbcdn.net/v/t1.18169-9/18740637_736694153169035_5617506210929128334_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=z3bzOutspYoAX_h7gE1&_nc_ht=scontent-ort2-1.xx&oh=dd6ae483dda86139fed19be3b37a8496&oe=616B2FB5"><img
               class="img-fluid rounded mb-4 mb-lg-0"
-              
               alt=""
             />
             </a>
@@ -22,7 +21,7 @@ function Social() {
             </p>
           </div>
         </div>
-        <hscroll />
+        <Hscroll />
       </div>
     </div>
   );

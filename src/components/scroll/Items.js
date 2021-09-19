@@ -1,13 +1,13 @@
-import styled from "styled-components";
+// import hscroll from '.\scroll'
 
-export default styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 250px;
-  width: 100%;
-  background-color: #00008B;
-  color: #fff;
-  margin: 0 15px;
-  font-size: 4em;
-`;
+// .hscroll{
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   height: 250px;
+//   width: 100%;
+//   background-color: #00008B;
+//   color: #fff;
+//   margin: 0 15px;
+//   font-size: 4em;
+// }

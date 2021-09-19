@@ -25,8 +25,7 @@ function CreateAccount() {
     let username = document.getElementById("getUsername");
     let password = document.getElementById("getPassword");
 
-    // bring the user to the profile page
-    location.replace("localhost/8000");
+    // bring the user to the profile page'
 }
   
   return (
@@ -44,7 +43,7 @@ function CreateAccount() {
             </input> 
             <label id = "re-enter password"> Re-enter Password:
             </label>
-            <input type = "text" id = "getPassword" placeholder = "Enter Password">  
+            <input type = "text" id = "getPassword" placeholder = "Re-enter Password">  
             </input>
             <button type = "submit" onclick = {createAccount} id = "submit"></button>
         </div>

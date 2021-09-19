@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import ReactDOM from "react-dom";
-import Carousel from "react-elastic-carousel";
-import item from "./Item";
+
+import items from "./Items";
 import "./styles.css";
 
 const breakPoints = [
@@ -10,32 +10,31 @@ const breakPoints = [
     { width: 768, itemsToShow: 3 },
     { width: 1200, itemsToShow: 4 }
   ];
-  function hscroll() {
-    const [items, setItems] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
+  function Hscroll() {
+    const [Items, setItems] = useState([1, 2, 3, 4]);
   
     const addItem = () => {
-      const nextItem = Math.max(1, items.length + 1);
-      setItems([...items, nextItem]);
+      const nextItem = Math.max(1, Items.length + 1);
+      setItems([Items, nextItem]);
     };
   
     const removeItem = () => {
-      const endRange = Math.max(0, items.length - 1);
-      setItems(items.slice(0, endRange));
+      const endRange = Math.max(0, Items.length - 1);
+      setItems(Items.slice(0, endRange));
     };
-  
     return (
-      <div className="App">
+      <div className="hscroll">
         <div className="controls-wrapper">
           <button onClick={removeItem}>Remove Item</button>
           <button onClick={addItem}>Add Item</button>
         </div>
         <hr className="seperator" />
         <div className="carousel-wrapper">
-          <Carousel breakPoints={breakPoints}>
-            {items.map((item) => (
-              <Item key={item}>{item}</Item>
+          <carousel breakPoints={breakPoints}>
+            {Items.map((item) => (
+              <item key={item}>{item}</item>
             ))}
-          </Carousel>
+          </carousel>
         </div>
       </div>
     );
@@ -43,4 +42,5 @@ const breakPoints = [
   
   const rootElement = document.getElementById("root");
   ReactDOM.render(<hscroll />, rootElement);
+export default Hscroll;
   
