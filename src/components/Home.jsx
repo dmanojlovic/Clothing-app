@@ -6,13 +6,13 @@ function Home() {
       <div class="container">
         <div class="row align-items-center my-5">
           <h3>Favorites
-          </h3>
+          </h3> <br>
           <div class="col-lg-7">
             <img
               class="uniqlo_pic"
               src="https://upload.wikimedia.org/wikipedia/commons/9/92/UNIQLO_logo.svg"
               alt=""
-              href=""
+              href="./uniqlostore"
             />
             <img
               class="levis_pic"
